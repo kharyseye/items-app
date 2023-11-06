@@ -1,0 +1,35 @@
+<nav class="p-3 container col-md-8 col-md-offset-2">
+    
+    <ul class="nav nav-pills">
+       <!--  <li>
+            <button routerLink="/home" class="btn btn-outline-success ms-1">Home
+                <i class="bi bi-house text-success"></i>
+            </button>
+            
+        </li>
+        <li>
+            <button routerLink="/items" class="btn btn-outline-success ms-1">Items
+                <i class="bi bi-arrow-down-up text-success"></i>
+            </button>
+        </li>
+        <li>
+            <button routerLink="/new-item" class="btn btn-outline-success ms-1">New Item
+                <i class="bi bi-plus-circle text-success"></i>
+            </button>
+            j'ai cree une boucle pour eviter un long code comme au dessus
+        </li> -->
+        
+        <li *ngFor="let action of actions">
+            <button
+                (click)="setCurrentAction(action)"
+                routerLink="{{action.route}}"
+                [class]="action==currentAction?'btn btn-success ms-1':'btn btn-outline-success ms-1'">
+                {{action.title}}
+                <i class="bi bi-{{action.icon}}"></i>
+            </button>
+        </li>
+    </ul>
+</nav>
+<router-outlet>
+     
+</router-outlet>

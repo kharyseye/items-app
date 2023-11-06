@@ -1,0 +1,26 @@
+<div class="p-3 container col-md-8 col-md-offset-2">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="text-center">Liste des Articles</h3>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Price</th><th>Check</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of items">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>
+                        <button (click)="handleCheckItem(item)" class="btn btn-outline-success">
+                            <i [class]="item.check?'bi bi-check':'bi bi-circle'"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

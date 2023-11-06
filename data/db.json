@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 300000,
+      "check": false
+    },
+    {
+      "id": 2,
+      "name": "Phone",
+      "price": 700000,
+      "check": true
+    },
+    {
+      "id": 3,
+      "name": "KeyBoard",
+      "price": 9000,
+      "check": false
+    },
+    {
+      "id": 4,
+      "name": "Printer",
+      "price": 250000,
+      "check": true
+    },
+    {
+      "id": 5,
+      "name": "Plug",
+      "price": 3000,
+      "check": false
+    },
+    {
+      "id": 6,
+      "name": "mouse",
+      "price": 5000,
+      "check": false
+    },
+    {
+      "id": 7,
+      "name": "touchPad",
+      "price": 15000,
+      "check": false
+    },
+    {
+      "id": 8,
+      "name": "hard disk",
+      "price": 30000,
+      "check": true
+    }
+  ]
+}
